@@ -1,0 +1,149 @@
+HOSTNAME: HiddenPC
+DATE REPORT: 2025-07-08 22:53:25
+----------------------------------------------------------------
+CPU Specs:
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               4
+On-line CPU(s) list:                  0-3
+Vendor ID:                            GenuineIntel
+Model name:                           Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+CPU family:                           6
+Model:                                158
+Thread(s) per core:                   1
+Core(s) per socket:                   4
+Socket(s):                            1
+Stepping:                             9
+BogoMIPS:                             6816.02
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            128 KiB (4 instances)
+L1i cache:                            128 KiB (4 instances)
+L2 cache:                             1 MiB (4 instances)
+L3 cache:                             6 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-3
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          KVM: Mitigation: VMX unsupported
+Vulnerability L1tf:                   Mitigation; PTE Inversion
+Vulnerability Mds:                    Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:               Mitigation; PTI
+Vulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Unknown: Dependent on hypervisor status
+Vulnerability Tsx async abort:        Mitigation; Clear CPU buffers; SMT Host state unknown
+----------------------------------------------------------------
+Hardware Spec:
+hiddenpc
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 1
+          size: 16GiB
+     *-cpu
+          product: Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz
+          vendor: Intel Corp.
+          physical id: 2
+          bus info: cpu@0
+          version: 6.158.9
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch pti ssbd ibrs ibpb stibp fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap clflushopt xsaveopt xsavec xgetbv1 xsaves md_clear flush_l1d arch_capabilities
+          configuration: microcode=4294967295
+     *-generic
+          description: System peripheral
+          product: Virtio file system
+          vendor: Red Hat, Inc.
+          physical id: 3
+          bus info: pci@1ec1:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:e0-df iomemory:e0-df iomemory:c0-bf irq:0 memory:e00000000-e00000fff memory:e00001000-e00001fff memory:c00000000-dffffffff
+        *-virtio1 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@1
+             configuration: driver=virtiofs
+     *-scsi
+          description: SCSI storage controller
+          product: Virtio 1.0 console
+          vendor: Red Hat, Inc.
+          physical id: 4
+          bus info: pci@2733:00:00.0
+          version: 01
+          width: 64 bits
+          clock: 33MHz
+          capabilities: scsi bus_master cap_list
+          configuration: driver=virtio-pci latency=64
+          resources: iomemory:90-8f iomemory:90-8f iomemory:90-8f irq:0 memory:9ffe00000-9ffe00fff memory:9ffe01000-9ffe01fff memory:9ffe02000-9ffe02fff
+        *-virtio0 UNCLAIMED
+             description: Virtual I/O device
+             physical id: 0
+             bus info: virtio@0
+             configuration: driver=virtio_console
+     *-display
+          description: 3D controller
+          product: Basic Render Driver
+          vendor: Microsoft Corporation
+          physical id: 0
+          bus info: pci@dab9:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: bus_master cap_list
+          configuration: driver=dxgkrnl latency=0
+          resources: irq:0
+     *-pnp00:00
+          product: PnP device PNP0b00
+          physical id: 5
+          capabilities: pnp
+          configuration: driver=rtc_cmos
+  *-network
+       description: Ethernet interface
+       physical id: 1
+       logical name: eth0
+       serial: 00:15:5d:27:af:d0
+       size: 10Gbit/s
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=hv_netvsc driverversion=6.6.87.2-microsoft-standard-WSL duplex=full firmware=N/A ip=172.26.188.5 link=yes multicast=yes speed=10Gbit/s
+----------------------------------------------------------------
+LSDEV:
+Device            DMA   IRQ  I/O Ports
+------------------------------------------------
+ACPI                         0000-0000 0000-0000 0000-0000 0000-0000
+acpi                      9 
+cascade             4       
+dma                          0000-0000
+dma1                         0000-0000
+dma2                         0000-0000
+fpu                          0000-0000
+keyboard                     0000-0000 0000-0000
+pic1                         0000-0000
+pic2                         0000-0000
+rtc0                      8  0000-0000
+timer0                       0000-0000
+timer1                       0000-0000
+virtio0-config           24 
+virtio0-virtqueues         25 
+virtio1-config           26 
+virtio1-hiprio           27 
+virtio1-requests.0         28 
+----------------------------------------------------------------
+Network Info:
+IP Address: 172.26.188.5
+MAC Address: 00:15:5d:27:af:d0
